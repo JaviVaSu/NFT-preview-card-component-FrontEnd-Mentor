@@ -1,0 +1,131 @@
+:root{
+    /*Colores primarios*/
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    /*Colores neutrales*/
+    --Very-dark-blue-main: hsl(217, 54%, 11%);
+    --Very-dark-blue-card: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%); 
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(../estilos/Outfit-VariableFont_wght.ttf);
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px;
+    background-color: var(--Very-dark-blue-main);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor{
+    background-color: var(--Very-dark-blue-card);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 90%;
+    padding: 3rem;
+}
+
+@media (min-width: 400px) {
+    .contenedor{
+        max-width: 39rem;
+    }
+}
+
+.div-imagen{
+    width: 100%;
+}
+
+.div-imagen img{
+    width: 100%;
+    height: auto;
+    border-radius: 1.5rem;
+    display: block;
+    margin: auto;
+}
+
+.titulo{
+    font-family: 'Outfit';
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: var(--White);
+}
+
+.descripcion{
+    font-family: 'Outfit';
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--Soft-blue);
+}
+
+.informacion-bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.informacion-bottom .precio{
+    font-family: 'Outfit';
+    font-family: 1.8rem;
+    font-weight: 600;
+    color: var(--Cyan);
+    display: inline-block;
+}
+
+.informacion-bottom .tiempo{
+    font-family: 'Outfit';
+    font-family: 1.8rem;
+    font-weight: 400;
+    color: var(--Soft-blue);
+    display: inline-block;
+}
+
+hr{
+    color: var(--Very-dark-blue-line);
+}
+
+.creador{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.creador img{
+    width: 15%;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
+
+.creador p{
+    font-family: 'Outfit';
+    font-family: 1.8rem;
+    font-weight: 400;
+    color: var(--White);
+    margin-left: 1rem;
+}
+
+.creador span{
+    color: var(--Soft-blue);
+}
